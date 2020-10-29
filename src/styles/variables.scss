@@ -11,4 +11,12 @@ $breakpoint-tablet: "(max-width: 600px)";
 $breakpoint-tablet-land: "(max-width: 768px)";
 $breakpoint-desk: "(max-width: 1200px)";
 
-
+/* Mixins */
+@mixin transitionBlue {
+  transition: all 0.3s ease 0;
+  color: $whiteClean;
+}
+@mixin transitionHover {
+  color: $blueSecundary;
+  transition: background-color 2s ease-out;
+}

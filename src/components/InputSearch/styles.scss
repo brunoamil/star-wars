@@ -1,0 +1,25 @@
+@import './../../styles/variables.scss';
+
+.search {
+  text-align: center;
+  background: #ddd;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  input {
+    padding: 10px;
+    width: 250px;
+    
+  }
+  input::placeholder {
+    color: grey;
+  }
+  button {
+    margin-left: 20px;
+    background: blue;
+    padding: 10px;
+    color: white;
+  }
+}
+
+
+

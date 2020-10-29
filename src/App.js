@@ -1,13 +1,15 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
 import './styles/global.scss';
 
-import Header from './components/Header/'
+import Routes from './routes';
 
-function App() {
-  return (
-    <>
-      <Header />
-    </>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>
+);
+
 
 export default App;
