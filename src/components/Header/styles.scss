@@ -1,0 +1,49 @@
+@import './../../styles/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 15px #05d1ff;
+  padding: 25px 10px;
+  max-width: 945px;
+  border: 1px solid #ddd;
+  margin-left: auto;
+  box-shadow: 2px 5px 5px $blueSecundary;
+  margin-right: auto;
+  .header__logo--img {
+    width: 210px;
+    cursor: pointer;
+  }
+
+  @media #{$breakpoint-mobile}{
+    flex-direction: column;
+  }
+}
+
+.header__navigation {
+  list-style: none;
+}
+.header__navigation li {
+  display: inline-block;
+  padding: 0 20px;
+  
+}
+
+.header__navigation li a {
+  transition: all 0.3s ease 0;
+  color: $whiteClean;
+  border-bottom: 1px solid $blueSecundary;
+  padding: 0.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header__navigation li a:hover {
+  color: $blueSecundary;
+  transition: background-color 2s ease-out;
+}
+
+
+
