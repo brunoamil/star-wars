@@ -5,8 +5,6 @@ import './styles.scss';
 import { ListPhotos } from './ListPhotos';
 
 const BoxImg = () => {
-  console.log(ListPhotos[0].img);
-
   return (
     <>
       {ListPhotos.map(photo => {

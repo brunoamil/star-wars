@@ -8,9 +8,10 @@ import Header from './../../components/Header';
 import InputSearch from './../../components/InputSearch';
 import BoxImg from './../../components/BoxImg';
 import Apresentation from './../../components/Apresentation';
-
+import Footer from '../../components/Footer';
 
 const Dashboard = () => {
+
   return (
     <Container>
       <Header />
@@ -18,6 +19,7 @@ const Dashboard = () => {
         <Apresentation />
         <InputSearch />
         <BoxImg />
+        <Footer />
       </div>
     </Container >
   );
