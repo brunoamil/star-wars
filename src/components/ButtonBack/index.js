@@ -2,10 +2,10 @@ import React from 'react';
 
 import './styles.scss';
 
-const ButtonBack = () => {
+const ButtonBack = (props) => {
   return (
     <div>
-      <button type="button">Back</button>
+      <button type="button">{props.cabecalho}</button>
     </div>
   );
 };

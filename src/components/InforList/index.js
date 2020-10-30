@@ -10,20 +10,26 @@ const InforList = () => {
   const [details, setDetails] = useState([]);
   const { params } = useRouteMatch();
 
+  const category = params.category;
+  let id = params.id;
+
+
+
+
   useEffect(() => {
-    api.get(`films/${params.id}`).then(response => {
+
+
+    api.get(`${category}/${id}`).then(response => {
       const detailsNew = response.data;
-      console.log(response.data);
       setDetails([...details, detailsNew]);
     })
   }, [params.id]);
-
   return (
     <div className="info">
       <div className="info__list">
         {details.map((text, index) => (
           <div key={index}>
-            <p>{text.title}</p>
+            <p>{text.name ? text.name : text.title}</p>
             <p>{text.director}</p>
             <p>{text.producer}</p>
           </div>
