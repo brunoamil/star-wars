@@ -2,7 +2,6 @@
 
 .search {
   text-align: center;
-  background: #ddd;
   padding: 20px 0;
   margin-bottom: 30px;
   input {
@@ -13,12 +12,20 @@
   input::placeholder {
     color: grey;
   }
+  input:not(:placeholder-shown) {
+    border-color: green;
+  }
+
+  input:placeholder-shown {
+    border-color: red;
+  }
   button {
     margin-left: 20px;
     background: blue;
     padding: 10px;
     color: white;
   }
+
 }
 
 
