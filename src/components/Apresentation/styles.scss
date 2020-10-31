@@ -1,5 +1,22 @@
+@import '../../styles/variables.scss';
+
 .apresentation {
   text-align: center;
   padding: 20px 0;
   color: white;
+  line-height: 35px;
+  
+  @media #{$breakpoint-medium}{
+      padding: 40px;
+  }
+  .apresentation__title {
+    margin-top: 15px;
+    font-size: $xlarge;
+    text-shadow: 0.1em 0.2em 0.3em rgba(0, 0, 0, 0.904);
+  }
+  .apresentation__paragraph {
+    margin-top: 10px;
+    font-size: $large;
+    text-shadow: 0.1em 0.2em 0.3em rgba(0, 0, 0, 0.904);
+  }
 }

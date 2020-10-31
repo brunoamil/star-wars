@@ -1,0 +1,33 @@
+
+@import '../../styles/variables.scss';
+
+.list {
+  border: 1px solid #ddd;
+  max-height: 500px; 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  .list__box {
+    height: 400px;
+    background: #070326;
+  }
+  img {
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+  }
+  .list__legend {
+    color: $whiteClean;
+    text-align: center;
+    
+  }
+  .list__legend p {
+    font-size: $medium;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+  }
+}
+

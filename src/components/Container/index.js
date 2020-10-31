@@ -5,7 +5,9 @@ import './styles.scss';
 const Container = ({ children }) => {
   return (
     <div className="container">
-      {children}
+      <div className="row">
+        {children}
+      </div>
     </div>
   )
 }

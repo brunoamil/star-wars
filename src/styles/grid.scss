@@ -23,12 +23,36 @@
 
 @media (min-width: 480px) {
   .collum-2 {
-    width: 50%;
+    width: 16.5%;
   }
 }
-@media (min-width: 728px) {
+@media (min-width: 728px)  {
   .collum-3 {
       width: 33.334%;
       margin: 0 auto;
+  }
+  .collum-2 {
+    width: 16,5%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 729px) and (max-width: 1050px) {
+  .collum-3 {
+      width: 33.334%;
+      margin: 0 auto;
+  }
+  .collum-2 {
+    width: 16,5%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1050px) {
+  .collum-3 {
+      width: 33.334%;
+      margin: 0 auto;
+  }
+  .collum-2 {
+    width: 16,5%;
+    margin: 0 auto;
   }
 }

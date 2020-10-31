@@ -3,19 +3,19 @@ import Spinner from 'react-spinkit';
 
 import './styles.scss';
 
-const Loading = ({ loading }) => {
+const LoadingSpinner = ({ loading }) => {
   return loading ? (
-    <div className="over-lay-content">
-      <div className="wrapper">
+    <div className="spinner">
+      <div className="spinner__wrapper">
         <Spinner
           name="line-scale-pulse-out-rapid"
           fadeIn="none"
           color="#05d1ff"
-          className="loadingPersonalization"
+          className="spinner__width"
         />
       </div>
     </div>
   ) : null;
 }
 
-export default Loading;
+export default LoadingSpinner;
