@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import imgLogo from './../../assets/img/logo.svg'
 import './styles.scss';
+import LogoImg from '../Logo';
 
 const Navbar = () => {
   return (
     <header className="header">
       <div className="header__logo">
-        <a href="/">
-          <img className="header__logo--img" src={imgLogo} alt="Marca mais conhecida do mundo star wars" />
-        </a>
+        <Link to="/">
+          <LogoImg className="header__logo--img" />
+        </Link>
       </div>
       <nav>
         <ul className="header__navigation">
-          <li><a href="/">About</a></li>
-          <li><a href="/">Game</a></li>
+          <li><Link to="/sobre">Sobre</Link></li>
+          <li><Link to="/game">Swapi</Link></li>
         </ul>
       </nav>
     </header>

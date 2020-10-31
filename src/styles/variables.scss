@@ -6,14 +6,26 @@ $yellowPricinpal: #ffc500;
 $purple: #6d018e;
 
 /* BreakingPoint */
-$breakpoint-mobile: "(max-width: 480px)";
-$breakpoint-tablet: "(max-width: 600px)";
-$breakpoint-tablet-land: "(max-width: 768px)";
-$breakpoint-desk: "(max-width: 1200px)";
+$breakpoint-medium: "(max-width: 768px)";
+$breakpoint-medium-large: "(min-width: 768px) and (max-width: 1050px)";
+$breakpoint-desk: "(min-width: 1050px)";
+
+/* Fonts */
+$light: 300;
+$normal: 500;
+$bold: 600;
+
+/*Sizes */
+$xsmall: 1.6rem;
+$small: 1.8rem;
+$medium: 2.2rem;
+$large: 2.6rem;
+$xlarge: 3.4rem;
+$xxlarge: 5.2rem;
 
 /* Mixins */
 @mixin transitionBlue {
-  transition: all 0.3s ease 0;
+  transition: all .4s ease;
   color: $whiteClean;
 }
 @mixin transitionHover {

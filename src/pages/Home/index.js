@@ -9,13 +9,11 @@ const Home = () => {
   return (
     <Container>
       <Header />
-      <ButtonHome />
+      <ButtonHome to="/dashboard">Start</ButtonHome>
       <Footer />
     </Container>
   )
 }
-
-
 
 export default Home;
 

@@ -6,28 +6,35 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 15px #05d1ff;
-  padding: 25px 10px;
-  border: 1px solid #ddd;
+  padding: 20px 10px;
   margin-left: auto;
-  box-shadow: 2px 5px 5px $blueSecundary;
+  box-shadow: 0px 2px 5px 0px $blueSecundary;
   margin-right: auto;
+  
   .header__logo--img {
-    width: 210px;
+    width: 20rem;
+    margin-left: 1rem;
     cursor: pointer;
   }
 
-  @media #{$breakpoint-mobile}{
+  @media #{$breakpoint-medium}{
     flex-direction: column;
+    margin: 0 10px 0;
+  }
+  @media #{$breakpoint-medium-large}{
+    margin: 0 10px 0;
   }
 }
 .header__navigation {
   list-style: none;
+  @media #{$breakpoint-medium}{
+    margin-top: 1.7rem;
+  }
 }
 .header__navigation li {
   display: inline-block;
   padding: 0 20px;
-  
+  font-size: $medium;
 }
 .header__navigation li a {
   @include transitionBlue;
