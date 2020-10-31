@@ -8,6 +8,7 @@ import Header from './../../components/Header';
 import Apresentation from './../../components/Apresentation';
 import InputSearch from './../../components/InputSearch';
 import SearchCategory from '../../components/SearchCategory';
+import ButtonSearch from '../../components/ButtonSearch';
 import BoxCategory from '../../components/BoxCategory';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import Footer from '../../components/Footer';
@@ -59,7 +60,6 @@ const Dashboard = () => {
     <Container>
       <Header />
       <Apresentation />
-
       <InputSearch
         value={searchCategory}
         onChange={(e) => { setsearchCategory(e.target.value) }}
@@ -67,21 +67,18 @@ const Dashboard = () => {
       />
 
       {!loading && (
-        <div className="collum buttonSearch">
-          <button onClick={handleSearchCategory} type="button">Buscar</button>
-        </div>)}
+        <ButtonSearch
+          onClick={handleSearchCategory} type="button">Buscar</ButtonSearch>)}
+
       <LoadingSpinner loading={loading} />
 
       <div className="InputError">
         {inputError && <p>{inputError}</p>}
       </div>
 
-
-
       {categorys.length === 0 ? <SearchCategory /> : categorys.map((dados, index) => (
         <BoxCategory key={index} dados={dados} searchPath={searchPath} index={index} />
       ))}
-
       <Footer />
     </Container>
   );

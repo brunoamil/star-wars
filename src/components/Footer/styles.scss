@@ -1,8 +1,9 @@
 @import './../../styles/variables.scss';
 
 .footer {
-  text-align: right;
+  text-align: center;
   font-size: $small;
+  padding: 40px 0;
   text-shadow: black 0.1em 0.1em 0.2em;;
   a {
     @include transitionBlue;

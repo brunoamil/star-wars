@@ -6,9 +6,10 @@ $yewllowBasic: #ffc500;
 $purple: #6d018e;
 
 /* BreakingPoint */
-$breakpoint-medium: "(max-width: 768px)";
+$breakpoint-small: "(max-width: 580px)";
+$breakpoint-medium: "(min-width: 581px) and (max-width: 768px)";
 $breakpoint-medium-large: "(min-width: 768px) and (max-width: 1050px)";
-$breakpoint-desk: "(min-width: 1050px)";
+$breakpoint-desk: "(min-width: 1051px)";
 
 /* Fonts */
 $light: 300;
@@ -30,5 +31,5 @@ $xxlarge: 5.2rem;
 }
 @mixin transitionHover {
   color: $blueSecundary;
-  transition: background-color 2s ease-out;
+  transition: background-color 3s ease-out;
 }

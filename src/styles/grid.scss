@@ -12,47 +12,40 @@
 .collum {
   display: inline-block;
   vertical-align: top;
-  min-height: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
   width: 100%;
-  margin-right: -4px;
-  *zoom: 1;
-  *display: inline;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 580px) {
   .collum-2 {
-    width: 16.5%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
-@media (min-width: 728px)  {
+
+@media (min-width: 581px) and (max-width: 768px) {
   .collum-3 {
       width: 33.334%;
       margin: 0 auto;
   }
   .collum-2 {
-    width: 16,5%;
+    width: 50%;
     margin: 0 auto;
   }
 }
-@media (min-width: 729px) and (max-width: 1050px) {
+@media (min-width: 769px) and (max-width: 1050px) {
   .collum-3 {
       width: 33.334%;
       margin: 0 auto;
   }
   .collum-2 {
-    width: 16,5%;
+    width: 16.334%;
     margin: 0 auto;
   }
 }
-@media (min-width: 1050px) {
-  .collum-3 {
-      width: 33.334%;
-      margin: 0 auto;
-  }
+@media(min-width: 1051px){
   .collum-2 {
-    width: 16,5%;
-    margin: 0 auto;
+    width: 16.662%;
   }
 }
