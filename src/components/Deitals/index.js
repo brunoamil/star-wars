@@ -6,18 +6,14 @@ import api from '../../services/api';
 
 import './styles.scss';
 
-const InforList = () => {
+const Details = () => {
   const [details, setDetails] = useState([]);
   const { params } = useRouteMatch();
 
   const category = params.category;
   let id = params.id;
 
-
-
-
   useEffect(() => {
-
 
     api.get(`${category}/${id}`).then(response => {
       const detailsNew = response.data;
@@ -39,4 +35,4 @@ const InforList = () => {
   )
 }
 
-export default InforList;
+export default Details;

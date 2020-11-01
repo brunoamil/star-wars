@@ -12,11 +12,11 @@
   .apresentation__title {
     margin-top: 15px;
     font-size: $xlarge;
-    text-shadow: 0.1em 0.2em 0.3em rgba(0, 0, 0, 0.904);
+    text-shadow: $textShadow
   }
   .apresentation__paragraph {
     margin-top: 10px;
     font-size: $large;
-    text-shadow: 0.1em 0.2em 0.3em rgba(0, 0, 0, 0.904);
+    text-shadow: $textShadow
   }
 }

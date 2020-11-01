@@ -3,13 +3,13 @@ import React from 'react';
 import './styles.scss';
 import Header from '../../components/Header';
 import Container from '../../components/Container';
-import InforList from '../../components/InforList';
+import Details from '../../components/Deitals';
 
 const ListCategory = () => {
   return (
     <Container>
       <Header />
-      <InforList />
+      <Details />
     </Container>
   )
 }

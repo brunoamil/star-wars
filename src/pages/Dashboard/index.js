@@ -9,15 +9,16 @@ import Apresentation from './../../components/Apresentation';
 import InputSearch from './../../components/InputSearch';
 import SearchCategory from '../../components/SearchCategory';
 import ButtonSearch from '../../components/ButtonSearch';
-import BoxCategory from '../../components/BoxCategory';
+import SearchApresentation from '../../components/SearchApresentation';
 import LoadingSpinner from '../../components/LoadingSpinner';
+//import { LoadingContext } from '../../context/LoadingSpinnerContext';
 import Footer from '../../components/Footer';
 
 import api from '../../services/api';
 
-
 const Dashboard = () => {
   const [searchCategory, setsearchCategory] = useState('');
+  //const { exibeLoading, escondeLoading } = useContext(LoadingContext);
   const [loading, setLoading] = useState(false);
   const [searchPath, setsearchPath] = useState('');
   const [inputError, setInputError] = useState('');
@@ -27,32 +28,27 @@ const Dashboard = () => {
     event.preventDefault();
 
     if (!searchCategory) {
-      setLoading(false);
-      setInputError('Ops,parece que meu jovem esqueceu de digitar uma categória correta :(');
+      setInputError('Ops,parece que meu jovem esqueceu de digitar uma categória :(');
       return;
     }
 
     try {
-
+      //exibeLoading(true);
       setLoading(true);
+      const searchParams = searchCategory.toLowerCase();
+      const response = await api.get(`/${searchParams}`);
+      const category = response.data.results;
 
-      setTimeout(async () => {
-
-        const searchParams = searchCategory.toLowerCase();
-        const response = await api.get(`/${searchParams}`);
-        const category = response.data.results;
-
-        setCategorys(category);
-        setsearchPath(searchCategory);
-        setsearchCategory('');
-        setInputError('');
-        setLoading(false);
-
-      }, 2000)
-    } catch (err) {
-      setInputError('Milhões de sabre de luz de desculpa meu jovem, parece que estamos enfrentando uns probleminhas:(');
+      setCategorys(category);
+      setsearchPath(searchCategory);
+      setsearchCategory('');
+      setInputError('');
       setLoading(false);
 
+    } catch (err) {
+      setLoading(false);
+      setsearchCategory('');
+      setInputError('Digite uma categoria válida jovem padoan, exemplo: People, Planets ou Species :D');
     }
   }
 
@@ -76,10 +72,13 @@ const Dashboard = () => {
         {inputError && <p>{inputError}</p>}
       </div>
 
+      {categorys.length === 0 ? "" : <h1 className="category">Encontramos no espaço sobre {searchPath}</h1>}
+
       {categorys.length === 0 ? <SearchCategory /> : categorys.map((dados, index) => (
-        <BoxCategory key={index} dados={dados} searchPath={searchPath} index={index} />
+        <SearchApresentation key={index} dados={dados} searchPath={searchPath} index={index} />
       ))}
-      <Footer />
+
+      < Footer />
     </Container>
   );
 }

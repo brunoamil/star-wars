@@ -8,7 +8,7 @@ const LoadingSpinner = ({ loading }) => {
     <div className="spinner">
       <div className="spinner__wrapper">
         <Spinner
-          name="line-scale-pulse-out-rapid"
+          name="wandering-cubes"
           fadeIn="none"
           color="#05d1ff"
           className="spinner__width"

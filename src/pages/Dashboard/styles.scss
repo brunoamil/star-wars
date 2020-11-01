@@ -5,10 +5,15 @@
     color: $whiteClean;
     text-align: center;
     font-size: $medium;
-    text-shadow: 0.1em 0.2em 0.3em rgba(0, 0, 0, 0.904);
+    text-shadow: $textShadow;
     margin-bottom: 15px;
 }
-
+.category {
+  font-size: $large;
+  margin-bottom: 20px;
+  color: $whiteClean;
+  text-shadow: $textShadow;
+}
 
 
 

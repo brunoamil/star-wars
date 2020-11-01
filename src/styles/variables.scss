@@ -4,6 +4,7 @@ $blueSecundary: #05d1ff;
 $whiteClean: #F5F5F4;
 $yewllowBasic: #ffc500;
 $purple: #6d018e;
+$greyBasic: #59565a;
 
 /* BreakingPoint */
 $breakpoint-small: "(max-width: 580px)";
@@ -15,6 +16,8 @@ $breakpoint-desk: "(min-width: 1051px)";
 $light: 300;
 $normal: 500;
 $bold: 600;
+
+$textShadow: 0.1em 0.2em 0.3em rgba(0, 0, 0, 0.904);
 
 /*Sizes */
 $xsmall: 1.6rem;

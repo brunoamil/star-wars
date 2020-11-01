@@ -3,14 +3,14 @@ import './styles.scss';
 
 const InputSearch = ({ placeholder, onChange, value }) => {
   return (
-    <div className="collum search">
+    <form className="collum search">
       <input
         type="text"
         placeholder={placeholder}
         onChange={onChange}
         value={value}
       />
-    </div>
+    </form>
   )
 }
 
