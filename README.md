@@ -51,7 +51,7 @@ Agora com todos os requisitos instalados você irá clonar o repósitorio para a
 git clone https://github.com/brunoamil/star-wars.git
 ```
 ### Instalando dependências
-Para instalar as dependências do projeto basta abrir seu **Prompt de Comando preferido** na pasta do projeto e inserir o seguinte comando:
+Para instalar as dependências do projeto basta abrir seu **terminal preferido** na pasta do projeto e inserir o seguinte comando:
 ```prompt
 yarn install
 ```
