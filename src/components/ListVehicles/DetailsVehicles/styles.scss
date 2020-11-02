@@ -1,12 +1,13 @@
 @import '../../../styles/variables.scss';
 
 .detailsVehicles {
-  height: 340px;
+  height: 420px;
 
   @include styleDetails;
 
   @media #{$breakpoint-small}{
     margin: $marginDetails;
+    height: 100%;
     @include  paddingMobile;
 
   }

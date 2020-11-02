@@ -1,11 +1,12 @@
 @import '../../../styles/variables.scss';
 
 .detailsStarships {
-  height: 400px;
+  height: 450px;
 
   @include styleDetails;
   @media #{$breakpoint-small}{
     margin: $marginDetails;
+    height: 100%;
     @include  paddingMobile;
   }
   @media #{$breakpoint-medium}{

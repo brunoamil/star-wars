@@ -1,12 +1,13 @@
 @import '../../../styles/variables.scss';
 
 .detailsFilme {
-  height: 200px;
+  height: 220px;
   
   @include styleDetails;
 
   @media #{$breakpoint-small}{
     margin: $marginDetails;
+    height: 100%;
     @include  paddingMobile;
 
   }
