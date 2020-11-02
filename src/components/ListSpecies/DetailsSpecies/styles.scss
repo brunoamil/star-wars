@@ -1,17 +1,31 @@
 @import '../../../styles/variables.scss';
 
-.detailsPlanets {
+.detailsSpecies {
   height: 290px;
 
   @include styleDetails;
 
-  .detailsPlanets__title {
+  @media #{$breakpoint-small}{
+    margin: $marginDetails;
+    @include  paddingMobile;
+  }
+  @media #{$breakpoint-medium}{
+    margin: $marginDetails;
+  }
+  @media #{$breakpoint-medium-large}{
+    margin: $marginDetails;
+  }
+
+  .detailsSpecies__title {
     font-size: $medium;
     color: $yellowSecundary;
     text-shadow: $textShadow;
   }
   p{
     color: $whiteClean;
+    @media #{$breakpoint-small}{
+      font-size: $xsmall;
+    }
   }
 }
 

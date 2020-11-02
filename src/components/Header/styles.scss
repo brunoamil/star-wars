@@ -16,7 +16,7 @@
     margin-left: 1rem;
     cursor: pointer;
   }
-  @media #{$breakpoint-medium}{
+  @media #{$breakpoint-small}{
     flex-direction: column;
     margin: 0 10px 0;
   }
@@ -26,7 +26,7 @@
 }
 .header__navigation {
   list-style: none;
-  @media #{$breakpoint-medium}{
+  @media #{$breakpoint-small}{
     margin-top: 1.7rem;
   }
 }

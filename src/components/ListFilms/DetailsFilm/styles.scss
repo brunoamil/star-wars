@@ -2,9 +2,18 @@
 
 .detailsFilme {
   height: 200px;
-
+  
   @include styleDetails;
 
+  @media #{$breakpoint-small}{
+    margin: $marginDetails;
+    @include  paddingMobile;
+
+  }
+  @media #{$breakpoint-medium}{
+    margin: $marginDetails;
+  }
+  
   .detailsFilme__title {
     font-size: $medium;
     color: $yellowSecundary;
@@ -12,6 +21,9 @@
   }
   p{
     color: $whiteClean;
+    @media #{$breakpoint-small}{
+      font-size: $xsmall;
+    }
   }
 }
 

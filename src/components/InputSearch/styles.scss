@@ -15,12 +15,12 @@
     width: 100%;
     background: transparent;
     max-width: 400px;
-    font-size: $medium;
+    font-size: $small;
     color: $whiteClean;
     background-color: rgba(0, 0, 0, 0.4);
   }
   input::placeholder {
-    color: $whiteClean;
+    color: rgb(172, 166, 166);
     text-align: center;
     text-shadow: $textShadow;
   }

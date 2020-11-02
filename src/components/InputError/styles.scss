@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.InputError {
+  color: $whiteClean;
+  text-align: center;
+  font-size: $large;
+  text-shadow: $textShadow;
+  margin-bottom: 25px;
+  padding: 20px;
+  @media #{$breakpoint-small}{
+    font-size: $small;
+  }
+}

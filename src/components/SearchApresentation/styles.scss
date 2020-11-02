@@ -1,43 +1,31 @@
 @import '../../styles/variables.scss';
 
-.details__content {
+.details {
   background: #0000008a;
   box-shadow: 0px 2px 5px 0px $blueSecundary;
-  padding: 55px 0 0 0;
+  padding: 10px;
+  margin-bottom: 10px;
   height: 150px;
-  margin-bottom: 15px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  // @media #{$breakpoint-small}{
-  //   margin: 0 30px 30px 30px;
-  // }
-  // @media #{$breakpoint-medium}{
-  //   margin: 0px 30px 30px 30px;
-  // }
-  // @media #{$breakpoint-desk}{
-  //   margin: 0px 5px;
-  // }
+  @media #{$breakpoint-small}{
+    margin: $marginDetails;
+  }
+  @media #{$breakpoint-medium}{
+    margin: $marginDetails;
+
+  }
+  @media #{$breakpoint-medium-large}{
+    margin: $marginDetails;
+
+  }
+ 
   .details__title {
-    color: $whiteClean;
+    color: $yellowSecundary;
     font-size: $medium;
     text-align: center;
     text-shadow: $textShadow;
-  }
-  .details__info{
-    font-size: $xsmall;
-  }
-  a{
-    color: $purple;
-    text-decoration: none;
-    font-size: $small;
-    background: white;
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    top: 10px;
-    position: relative;
   }
 }
 

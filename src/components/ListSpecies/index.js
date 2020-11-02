@@ -7,10 +7,12 @@ import api from '../../services/api';
 
 import DetailsFilm from './DetailsSpecies';
 import ButtonBack from '../ButtonBack';
+import InputError from '../InputError';
 
 const ListSpecies = () => {
   const [hasSpecie, setSpecie] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [inputError, setInputError] = useState('');
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -21,7 +23,8 @@ const ListSpecies = () => {
       setLoading(false);
 
     }).catch((error) => {
-      console.log('Whoops! Houve um erro.', error.message || error)
+      setLoading(false);
+      setInputError('Whoops! Houve um erro, tente novamente mais tarde meu jovem Padawan...', error.message || error);
     })
 
   }, [setSpecie]);
@@ -34,9 +37,11 @@ const ListSpecies = () => {
   return (
     <>
       <div className="description">
-        <ButtonBack />
+        <ButtonBack to="/" />
         <h1>Detalhes das espécies de <span>Star Wars:</span></h1>
       </div>
+
+      {inputError && <InputError error={inputError} />}
 
       {hasSpecie.map((specie, index) => (
         <DetailsFilm specie={specie} key={index} />

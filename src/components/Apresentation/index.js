@@ -5,10 +5,10 @@ import './styles.scss';
 
 const Apresentation = () => {
   return (
-    <section className="collum apresentation">
-      <h2 className="apresentation__title">O que você deseja jovem Padawan ?</h2>
+    <div className="collum apresentation">
+      <h1 className="apresentation__title">O que você deseja jovem Padawan ?</h1>
       <p className="apresentation__paragraph">Selecione para detalhes completos ou digite para visualizar o título</p>
-    </section>
+    </div>
   );
 };
 

@@ -7,16 +7,20 @@
   line-height: 35px;
   
   @media #{$breakpoint-small}{
-      padding: 40px;
+      padding: 10px 30px;
   }
   .apresentation__title {
     margin-top: 15px;
-    font-size: $large;
+    font-size: $xlarge;
     text-shadow: $textShadow
   }
   .apresentation__paragraph {
     margin-top: 10px;
-    font-size: $medium;
-    text-shadow: $textShadow
+    font-size: $small;
+    text-shadow: $textShadow;
+
+    @media #{$breakpoint-small}{
+      font-size: $medium;
+    }
   }
 }

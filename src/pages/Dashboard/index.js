@@ -10,13 +10,12 @@ import SearchCategory from '../../components/SearchCategory';
 import ButtonSearch from '../../components/ButtonSearch';
 import SearchApresentation from '../../components/SearchApresentation';
 import LoadingSpinner from '../../components/LoadingSpinner';
-//import { LoadingContext } from '../../context/LoadingSpinnerContext';
+import InputError from '../../components/InputError';
 
 import api from '../../services/api';
 
 const Dashboard = () => {
   const [searchCategory, setsearchCategory] = useState('');
-  //const { exibeLoading, escondeLoading } = useContext(LoadingContext);
   const [loading, setLoading] = useState(false);
   const [searchPath, setsearchPath] = useState('');
   const [inputError, setInputError] = useState('');
@@ -26,12 +25,11 @@ const Dashboard = () => {
     event.preventDefault();
 
     if (!searchCategory) {
-      setInputError('Ops,parece que meu jovem esqueceu de digitar uma categória :(');
+      setInputError('Ops,parece que meu jovem esqueceu de digitar uma categória..');
       return;
     }
 
     try {
-      //exibeLoading(true);
       setLoading(true);
       const searchParams = searchCategory.toLowerCase();
       const response = await api.get(`/${searchParams}`);
@@ -46,7 +44,7 @@ const Dashboard = () => {
     } catch (err) {
       setLoading(false);
       setsearchCategory('');
-      setInputError('Digite uma categoria válida jovem Padawan, exemplo: People, Planets ou Species :D');
+      setInputError('Digite uma categoria válida jovem Padawan, exemplo: People, Planets ou Species.');
     }
   }
 
@@ -56,24 +54,22 @@ const Dashboard = () => {
       <InputSearch
         value={searchCategory}
         onChange={(e) => { setsearchCategory(e.target.value) }}
-        placeholder="Informe uma categoria"
+        placeholder="films, planets, species..."
       />
 
       {!loading && (
         <ButtonSearch
           onClick={handleSearchCategory} type="button">Buscar</ButtonSearch>)}
 
-      <LoadingSpinner loading={loading} />
-
-      <div className="InputError">
-        {inputError && <p>{inputError}</p>}
-      </div>
+      {inputError && <InputError error={inputError} />}
 
       {categorys.length === 0 ? "" : <p className="category">Foi encontrado no espaço sobre {searchPath}</p>}
 
       {categorys.length === 0 ? <SearchCategory /> : categorys.map((dados, index) => (
         <SearchApresentation key={index} dados={dados} searchPath={searchPath} index={index} />
       ))}
+
+      <LoadingSpinner loading={loading} />
     </Container>
   );
 }

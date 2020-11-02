@@ -5,6 +5,17 @@
 
   @include styleDetails;
 
+  @media #{$breakpoint-small}{
+    margin: $marginDetails;
+    @include  paddingMobile;
+  }
+  @media #{$breakpoint-medium}{
+    margin: $marginDetails;
+  }
+  @media #{$breakpoint-medium-large}{
+    margin: $marginDetails;
+  }
+
   .detailsPeople__title {
     font-size: $medium;
     color: $yellowSecundary;
@@ -12,6 +23,9 @@
   }
   p{
     color: $whiteClean;
+    @media #{$breakpoint-small}{
+      font-size: $xsmall;
+    }
   }
 }
 

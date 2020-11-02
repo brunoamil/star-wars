@@ -5,8 +5,8 @@ const DetailsSpecies = ({ specie }) => {
 
   return (
     <div className="collum  collum-6">
-      <div className="detailsPlanets">
-        <h2 className="detailsPlanets__title">{specie?.name}</h2>
+      <div className="detailsSpecies">
+        <h2 className="detailsSpecies__title">{specie?.name}</h2>
         <p>Classificação: {specie?.classification}</p>
         <p>Designação: {specie?.designation}</p>
         <p>Altura média: {specie?.average_height}</p>

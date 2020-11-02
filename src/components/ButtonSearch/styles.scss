@@ -9,10 +9,10 @@
     padding-right: 10px;
   }
   button {
-    color: $whiteClean;
     background: $yewllowBasic;
     padding: 10px;
     width: 100%;
+    
     max-width: 400px;
     padding: 20px;
     text-shadow: $textShadow;
@@ -23,5 +23,8 @@
   }
   button:hover {
     background: $blueSecundary;
+  }
+  .butttonSearch__back {
+    margin-top: 30px;
   }
 }

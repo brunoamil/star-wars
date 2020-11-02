@@ -1,17 +1,17 @@
 @import './../../styles/variables.scss';
 
-.InputError {
-    color: $redBasic;
-    text-align: center;
-    font-size: $large;
-    text-shadow: $textShadow;
-    margin-bottom: 25px;
-}
 .category {
   font-size: $large;
   margin-bottom: 20px;
   color: $whiteClean;
   text-shadow: $textShadow;
+  text-align: center;
+  margin-left: 20px;
+
+  @media #{$breakpoint-small}{
+    font-size: $small;
+    padding: 20px;
+  }
 }
 
 

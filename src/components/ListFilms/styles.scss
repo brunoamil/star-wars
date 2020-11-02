@@ -1,9 +1,19 @@
 @import '../../styles/variables.scss';
 
 .description {
- @include Description; 
+ @include Description;
 
+ @media #{$breakpoint-small}{
+  flex-direction: column;
+  margin-top: 20px;
+}
+  
   h1 {
+    font-size: $xlarge;
     @include DescriptionHeading;
+
+    @media #{$breakpoint-small}{
+      font-size: $small;
+    }
   }
 }

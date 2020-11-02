@@ -3,7 +3,6 @@ import React from 'react';
 import './styles.scss';
 
 const DetailsFilm = ({ film }) => {
-  console.log(film);
 
   return (
     <div className="collum  collum-6">

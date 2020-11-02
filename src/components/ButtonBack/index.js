@@ -4,9 +4,9 @@ import { FiArrowLeft } from 'react-icons/fi';
 
 import './styles.scss';
 
-const ButtonBack = () => {
+const ButtonBack = ({ to }) => {
   return (
-    <Link className="buttonBack" to="/dashboard"><FiArrowLeft /></Link>
+    <Link className="buttonBack" to={to}><FiArrowLeft /></Link>
   )
 }
 
