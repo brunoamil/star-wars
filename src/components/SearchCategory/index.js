@@ -5,7 +5,6 @@ import { ListPhotos } from './ListPhotos';
 
 import './styles.scss';
 
-
 const SearchCategory = () => {
   return (
     <>

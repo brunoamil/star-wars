@@ -15,16 +15,16 @@
   @media #{$breakpoint-medium-large}{
     margin: $marginDetails;
   }
-
   .detailsPlanets__title {
     font-size: $medium;
     color: $yellowSecundary;
     text-shadow: $textShadow;
   }
   p{
+    font-size: $small;
     color: $whiteClean;
     @media #{$breakpoint-small}{
-      font-size: $xsmall;
+      font-size: $small;
     }
   }
 }

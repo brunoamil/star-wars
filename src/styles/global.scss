@@ -42,23 +42,7 @@ body {
   scroll-behavior: smooth;
   background: fixed;
   background-size: cover;
-  background-image: url('../assets/img/background_banner.jpg');
+  background-image: url('../assets/img/background_min.jpg');
   opacity: 0.9;
   background-position: center;
-}
-
-@media #{$breakpoint-medium} {
-    p {
-      font-size: $xsmall;
-    }
-}
-@media #{$breakpoint-medium-large} {
-  p {
-    font-size: $xsmall;
-  }
-}
-@media #{$breakpoint-desk} {
-  p {
-    font-size: $xsmall;
-  }
 }

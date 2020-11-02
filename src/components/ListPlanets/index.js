@@ -9,7 +9,6 @@ import DetailsPlanets from './DetailsPlanets';
 import ButtonBack from '../ButtonBack';
 import InputError from '../InputError';
 
-
 const ListPlanets = () => {
   const [hasPlanet, setPlanet] = useState([]);
   const [loading, setLoading] = useState(false);

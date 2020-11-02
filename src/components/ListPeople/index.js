@@ -3,11 +3,12 @@ import React, { useCallback, useEffect, useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
 import DetailsPeople from './DetailsPeople';
+import ButtonBack from '../ButtonBack';
+import InputError from '../InputError';
 
 import './styles.scss';
 import api from '../../services/api';
-import ButtonBack from '../ButtonBack';
-import InputError from '../InputError';
+
 
 const ListPeople = () => {
   const [hasPeople, setPeople] = useState([]);

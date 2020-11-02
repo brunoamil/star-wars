@@ -4,12 +4,10 @@
   text-align: center;
   padding: 20px 0 0 0;
   
-  
   @media #{$breakpoint-small}{
     padding-left: 10px;
     padding-right: 10px;
   }
- 
   input {
     padding: 20px;
     width: 100%;
@@ -24,8 +22,6 @@
     text-align: center;
     text-shadow: $textShadow;
   }
-  
-
   input:placeholder-shown {
     border: 1px solid rgba(0, 0, 0, 0.4);
   }

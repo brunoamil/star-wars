@@ -12,7 +12,10 @@
   .apresentation__title {
     margin-top: 15px;
     font-size: $xlarge;
-    text-shadow: $textShadow
+    text-shadow: $textShadow;
+    @media #{$breakpoint-small}{
+      font-size: $large;
+    }
   }
   .apresentation__paragraph {
     margin-top: 10px;
@@ -20,7 +23,7 @@
     text-shadow: $textShadow;
 
     @media #{$breakpoint-small}{
-      font-size: $medium;
+      font-size: $small;
     }
   }
 }

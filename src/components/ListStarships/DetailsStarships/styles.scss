@@ -20,9 +20,10 @@
     text-shadow: $textShadow;
   }
   p{
+    font-size: $small;
     color: $whiteClean;
     @media #{$breakpoint-small}{
-      font-size: $xsmall;
+      font-size: $small;
     }
   }
 }

@@ -7,13 +7,12 @@
   flex-direction: column;
   margin-top: 20px;
 }
-  
   h1 {
     font-size: $xlarge;
     @include DescriptionHeading;
 
     @media #{$breakpoint-small}{
-      font-size: $small;
+      font-size: $medium;
     }
   }
 }
