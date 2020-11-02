@@ -1,6 +1,8 @@
 
 ## STAR WARS - DESAFIO
 
+Disponível o prototipo feito no [FIGMA](https://www.figma.com/file/nrO7g1DDI5tonaczfSaA7J/STAR-WARS?node-id=61%3A79)
+
 - [Visão Geral do Projeto](#visão-geral-do-projeto)
   - [Tecnologias](#tecnologias)
   - [Documentação da API Star Wars](#documentação-api-star-wars)
@@ -10,8 +12,6 @@
 - [Gerando build](#gerando-build)
 
 
-Projeto disponível em [STARWARS](http://nettlify.com)
-Disponível o prototipo feito no [FIGMA](https://www.figma.com/file/nrO7g1DDI5tonaczfSaA7J/STAR-WARS?node-id=61%3A79)
 
 ### Visão Geral do Projeto
 O objetivo deste desafio foi criar uma aplicação web para fãs de Star Wars, sendo possivel buscar e visualizar informações sobre cada categoria (planetas, naves espaciais, veículos, pessoas, films e espécies) de todos os sete filmes. 
@@ -24,13 +24,13 @@ O objetivo deste desafio foi criar uma aplicação web para fãs de Star Wars, s
  - [SpinkKit](https://www.npmjs.com/package/react-spinkit)
 
 - JAVASCRIPT 
- - [React]
+ - React
  - [ReactIcons](https://react-icons.github.io/react-icons/)
  - [Commitlint](https://github.com/conventional-changelog/commitlint)
 
 
 ### Documentação da API Star Wars
-A documentação da API utilizada para obter os dados do projeto está disponível em: [SWapi](https://swapi.dev/).
+A documentação da API utilizada para obter os dados do projeto está disponível em: [SWAPI](https://swapi.dev/).
 
 
 ### Requisitos para execução
@@ -63,4 +63,4 @@ yarn build
 ```
 A pasta construida ficará na raiz do projeto como `build`.
 
-Aproveite o projeto! :) 
+Aproveite :) 
