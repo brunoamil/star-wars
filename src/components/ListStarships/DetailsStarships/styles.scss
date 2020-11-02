@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.detailsStarships {
+  height: 365px;
+
+  @include styleDetails;
+
+  .detailsStarships__title {
+    font-size: $medium;
+    color: $yellowSecundary;
+    text-shadow: $textShadow;
+  }
+  p{
+    color: $whiteClean;
+  }
+}
+

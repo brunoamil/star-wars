@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.detailsPlanets {
+  height: 290px;
+
+  @include styleDetails;
+
+  .detailsPlanets__title {
+    font-size: $medium;
+    color: $yellowSecundary;
+    text-shadow: $textShadow;
+  }
+  p{
+    color: $whiteClean;
+  }
+}
+

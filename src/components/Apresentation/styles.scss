@@ -3,7 +3,7 @@
 .apresentation {
   text-align: center;
   padding: 20px 0;
-  color: white;
+  color: $whiteClean;
   line-height: 35px;
   
   @media #{$breakpoint-small}{
@@ -11,12 +11,12 @@
   }
   .apresentation__title {
     margin-top: 15px;
-    font-size: $xlarge;
+    font-size: $large;
     text-shadow: $textShadow
   }
   .apresentation__paragraph {
     margin-top: 10px;
-    font-size: $large;
+    font-size: $medium;
     text-shadow: $textShadow
   }
 }

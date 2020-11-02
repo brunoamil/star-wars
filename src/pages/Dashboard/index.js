@@ -4,7 +4,6 @@ import './styles.scss';
 import './../../styles/grid.scss';
 
 import Container from './../../components/Container';
-import Header from './../../components/Header';
 import Apresentation from './../../components/Apresentation';
 import InputSearch from './../../components/InputSearch';
 import SearchCategory from '../../components/SearchCategory';
@@ -12,7 +11,6 @@ import ButtonSearch from '../../components/ButtonSearch';
 import SearchApresentation from '../../components/SearchApresentation';
 import LoadingSpinner from '../../components/LoadingSpinner';
 //import { LoadingContext } from '../../context/LoadingSpinnerContext';
-import Footer from '../../components/Footer';
 
 import api from '../../services/api';
 
@@ -48,13 +46,12 @@ const Dashboard = () => {
     } catch (err) {
       setLoading(false);
       setsearchCategory('');
-      setInputError('Digite uma categoria válida jovem padoan, exemplo: People, Planets ou Species :D');
+      setInputError('Digite uma categoria válida jovem Padawan, exemplo: People, Planets ou Species :D');
     }
   }
 
   return (
     <Container>
-      <Header />
       <Apresentation />
       <InputSearch
         value={searchCategory}
@@ -72,13 +69,11 @@ const Dashboard = () => {
         {inputError && <p>{inputError}</p>}
       </div>
 
-      {categorys.length === 0 ? "" : <h1 className="category">Encontramos no espaço sobre {searchPath}</h1>}
+      {categorys.length === 0 ? "" : <p className="category">Foi encontrado no espaço sobre {searchPath}</p>}
 
       {categorys.length === 0 ? <SearchCategory /> : categorys.map((dados, index) => (
         <SearchApresentation key={index} dados={dados} searchPath={searchPath} index={index} />
       ))}
-
-      < Footer />
     </Container>
   );
 }

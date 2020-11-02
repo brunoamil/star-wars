@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.detailsVehicles {
+  height: 340px;
+
+  @include styleDetails;
+
+  .detailsVehicles__title {
+    font-size: $medium;
+    color: $yellowSecundary;
+    text-shadow: $textShadow;
+  }
+  p{
+    color: $whiteClean;
+  }
+}
+

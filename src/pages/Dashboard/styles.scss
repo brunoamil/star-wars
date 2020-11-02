@@ -1,12 +1,11 @@
 @import './../../styles/variables.scss';
 
-//tirar daqui esse código e levar para o component error
 .InputError {
-    color: $whiteClean;
+    color: $redBasic;
     text-align: center;
-    font-size: $medium;
+    font-size: $large;
     text-shadow: $textShadow;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .category {
   font-size: $large;

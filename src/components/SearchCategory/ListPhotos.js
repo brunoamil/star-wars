@@ -3,37 +3,37 @@ import Path from 'path';
 export const ListPhotos = [
   {
     id: 1,
-    title: "Films",
+    title: "films",
     img: Path.join("img", "films.png"),
     alt: "Foto do paduan",
   },
   {
     id: 2,
-    title: "People",
+    title: "people",
     img: Path.join("img", "people.png"),
     alt: "Foto do paduan",
   },
   {
     id: 3,
-    title: "Planets",
+    title: "planets",
     img: Path.join("img", "planets.png"),
     alt: "Foto do paduan",
   },
   {
     id: 4,
-    title: "Species",
+    title: "species",
     img: Path.join("img", "droid.png"),
     alt: "Foto do paduan",
   },
   {
     id: 5,
-    title: "Starships",
+    title: "starships",
     img: Path.join("img", "starships.png"),
     alt: "Foto do paduan",
   },
   {
     id: 6,
-    title: "Vehicles",
+    title: "vehicles",
     img: Path.join("img", "vehicles.png"),
     alt: "Foto do paduan",
   },

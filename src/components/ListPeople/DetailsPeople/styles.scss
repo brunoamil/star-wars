@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.detailsPeople {
+  height: 290px;
+
+  @include styleDetails;
+
+  .detailsPeople__title {
+    font-size: $medium;
+    color: $yellowSecundary;
+    text-shadow: $textShadow;
+  }
+  p{
+    color: $whiteClean;
+  }
+}
+

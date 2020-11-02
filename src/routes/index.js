@@ -1,15 +1,29 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Dashboard from './../pages/Dashboard';
-import ListCategory from './../pages/ListCategory';
+import Template from '../components/Template';
+
 import Home from './../pages/Home';
+import Dashboard from './../pages/Dashboard';
+import ListFilms from '../components/ListFilms'
+import ListPeople from '../components/ListPeople';
+import ListPlanets from '../components/ListPlanets';
+import ListSpecies from '../components/ListSpecies';
+import ListStarships from '../components/ListStarships';
+import ListVehicles from '../components/ListVehicles';
 
 const Routes = () => (
   <Switch>
-    <Route path="/" exact component={Home} />
-    <Route path="/dashboard" component={Dashboard} />
-    <Route path="/listcategory/:category/:id" component={ListCategory} />
+    <Template>
+      <Route path="/" exact component={Home} />
+      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/films" component={ListFilms} />
+      <Route path="/people" component={ListPeople} />
+      <Route path="/planets" component={ListPlanets} />
+      <Route path="/species" component={ListSpecies} />
+      <Route path="/starships" component={ListStarships} />
+      <Route path="/vehicles" component={ListVehicles} />
+    </Template>
   </Switch>
 )
 

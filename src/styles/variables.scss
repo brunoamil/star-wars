@@ -1,11 +1,12 @@
 /* Colors */
-$bluePrimary: #070326;
-$blueSecundary: #05d1ff;
+$bluePrimary: #0b0219;
+$blueSecundary: #37aac5;
 $whiteClean: #F5F5F4;
-$yewllowBasic: #ffc500;
+$yewllowBasic: #ceb504;
 $purple: #6d018e;
 $greyBasic: #59565a;
-
+$yellowSecundary: #d0a104;
+$redBasic: #de0b0b;
 /* BreakingPoint */
 $breakpoint-small: "(max-width: 580px)";
 $breakpoint-medium: "(min-width: 581px) and (max-width: 768px)";
@@ -35,4 +36,10 @@ $xxlarge: 5.2rem;
 @mixin transitionHover {
   color: $blueSecundary;
   transition: background-color 3s ease-out;
+}
+@mixin styleDetails {
+  background: #0000008a;
+  box-shadow: 0px 2px 5px 0px $blueSecundary;
+  margin-bottom: 15px;
+  padding: 20px 0 0 20px;
 }

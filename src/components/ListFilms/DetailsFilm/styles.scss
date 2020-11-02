@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.detailsFilme {
+  height: 200px;
+
+  @include styleDetails;
+
+  .detailsFilme__title {
+    font-size: $medium;
+    color: $yellowSecundary;
+    text-shadow: $textShadow;
+  }
+  p{
+    color: $whiteClean;
+  }
+}
+
