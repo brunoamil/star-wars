@@ -6,7 +6,7 @@ import './styles.scss';
 import api from '../../services/api';
 
 import DetailsStarships from './DetailsStarships';
-import { Link } from 'react-router-dom';
+import ButtonBack from '../ButtonBack';
 
 const ListStarships = () => {
   const [hasStarship, setStarship] = useState([]);
@@ -33,14 +33,16 @@ const ListStarships = () => {
 
   return (
     <>
-      <LoadingSpinner loading={loading} />
-      <Link className="buttonBack" to="/dashboard">VOLTAR</Link>
-
-      <h1>Detalhes dos filmes de Star Wars:</h1>
+      <div className="description">
+        <ButtonBack />
+        <h1>Detalhes dos filmes de <span>Star Wars:</span></h1>
+      </div>
 
       {hasStarship.map((starship, index) => (
         <DetailsStarships starship={starship} key={index} />
       ))}
+
+      <LoadingSpinner loading={loading} />
     </>
   )
 }

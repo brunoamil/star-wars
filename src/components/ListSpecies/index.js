@@ -6,7 +6,7 @@ import './styles.scss';
 import api from '../../services/api';
 
 import DetailsFilm from './DetailsSpecies';
-import { Link } from 'react-router-dom';
+import ButtonBack from '../ButtonBack';
 
 const ListSpecies = () => {
   const [hasSpecie, setSpecie] = useState([]);
@@ -33,14 +33,16 @@ const ListSpecies = () => {
 
   return (
     <>
-      <LoadingSpinner loading={loading} />
-      <Link className="buttonBack" to="/dashboard">VOLTAR</Link>
-
-      <h1>Detalhes das espécies de Star Wars:</h1>
+      <div className="description">
+        <ButtonBack />
+        <h1>Detalhes das espécies de <span>Star Wars:</span></h1>
+      </div>
 
       {hasSpecie.map((specie, index) => (
         <DetailsFilm specie={specie} key={index} />
       ))}
+
+      <LoadingSpinner loading={loading} />
     </>
   )
 }

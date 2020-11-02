@@ -6,7 +6,7 @@ import DetailsPeople from './DetailsPeople';
 
 import './styles.scss';
 import api from '../../services/api';
-import { Link } from 'react-router-dom';
+import ButtonBack from '../ButtonBack';
 
 const ListPeople = () => {
   const [hasPeople, setPeople] = useState([]);
@@ -33,13 +33,16 @@ const ListPeople = () => {
 
   return (
     <>
-      <LoadingSpinner loading={loading} />
-      <Link className="buttonBack" to="/dashboard">VOLTAR</Link>
+      <div className="description">
+        <ButtonBack />
+        <h1>Detalhes das pessoas de <span>Star Wars:</span></h1>
+      </div>
 
-      <h1>Detalhes das pessoas de Star Wars:</h1>
       {hasPeople.map((people, index) => (
         <DetailsPeople people={people} key={index} />
       ))}
+
+      <LoadingSpinner loading={loading} />
     </>
   )
 }

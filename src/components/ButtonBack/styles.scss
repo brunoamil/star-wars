@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.buttonBack {
+  color: $blueSecundary;
+  text-decoration: none;
+  border: 1px solid $blueSecundary;
+  padding: 5px 20px;
+  font-size: $medium;
+  box-shadow: 0px 2px 5px 0px $blueSecundary;
+}

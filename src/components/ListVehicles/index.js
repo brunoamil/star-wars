@@ -7,7 +7,7 @@ import './styles.scss';
 import api from '../../services/api';
 
 import DetailsVehicles from './DetailsVehicles';
-import { Link } from 'react-router-dom';
+import ButtonBack from '../ButtonBack';
 
 const ListVehicles = () => {
   const [hasVehicle, setVehicle] = useState([]);
@@ -34,13 +34,16 @@ const ListVehicles = () => {
 
   return (
     <>
-      <LoadingSpinner loading={loading} />
-      <Link className="buttonBack" to="/dashboard">VOLTAR</Link>
+      <div className="description">
+        <ButtonBack />
+        <h1>Detalhes das espécies de <span>Star Wars:</span></h1>
+      </div>
 
-      <h1>Detalhes dos Veículos de Star Wars:</h1>
       {hasVehicle.map((vehicle, index) => (
         <DetailsVehicles vehicle={vehicle} key={index} />
       ))}
+
+      <LoadingSpinner loading={loading} />
     </>
   )
 }

@@ -6,7 +6,7 @@ import './styles.scss';
 import api from '../../services/api';
 
 import DetailsPlanets from './DetailsPlanets';
-import { Link } from 'react-router-dom';
+import ButtonBack from '../ButtonBack';
 
 
 const ListPlanets = () => {
@@ -34,13 +34,16 @@ const ListPlanets = () => {
 
   return (
     <>
-      <LoadingSpinner loading={loading} />
-      <Link className="buttonBack" to="/dashboard">VOLTAR</Link>
+      <div className="description">
+        <ButtonBack />
+        <h1>Detalhes dos planetas de <span>Star Wars:</span></h1>
+      </div>
 
-      <h1>Detalhes dos planetas de Star Wars:</h1>
       {hasPlanet.map((planet, index) => (
         <DetailsPlanets planet={planet} key={index} />
       ))}
+
+      <LoadingSpinner loading={loading} />
     </>
   )
 }

@@ -7,6 +7,7 @@ $purple: #6d018e;
 $greyBasic: #59565a;
 $yellowSecundary: #d0a104;
 $redBasic: #de0b0b;
+
 /* BreakingPoint */
 $breakpoint-small: "(max-width: 580px)";
 $breakpoint-medium: "(min-width: 581px) and (max-width: 768px)";
@@ -42,4 +43,20 @@ $xxlarge: 5.2rem;
   box-shadow: 0px 2px 5px 0px $blueSecundary;
   margin-bottom: 15px;
   padding: 20px 0 0 20px;
+}
+@mixin Description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin DescriptionHeading {
+  margin: 30px 0;
+  text-align: center;
+  font-size: $xlarge;
+  color: $whiteClean;
+  text-shadow: $textShadow;
+  margin-left: 40px;
+   span {
+     border-bottom: 3px solid $yellowSecundary;
+   }
 }

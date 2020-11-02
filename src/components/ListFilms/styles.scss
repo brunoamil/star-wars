@@ -1,13 +1,9 @@
 @import '../../styles/variables.scss';
 
-h1 {
-  margin: 30px 0;
-  text-align: center;
-  font-size: $xlarge;
-  color: $whiteClean;
-  text-shadow: $textShadow;
-}
-.buttonBack {
-  font-size: 30px;
-  color: white;
+.description {
+ @include Description; 
+
+  h1 {
+    @include DescriptionHeading;
+  }
 }

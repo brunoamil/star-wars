@@ -6,7 +6,7 @@ import './styles.scss';
 import api from '../../services/api';
 
 import DetailsFilm from './DetailsFilm';
-import { Link } from 'react-router-dom';
+import ButtonBack from './../ButtonBack';
 
 const ListFilms = () => {
   const [hasFilm, setFilm] = useState([]);
@@ -33,12 +33,16 @@ const ListFilms = () => {
 
   return (
     <>
-      <LoadingSpinner loading={loading} />
-      <Link className="buttonBack" to="/dashboard">VOLTAR</Link>
-      <h1>Detalhes dos filmes de Star Wars:</h1>
+      <div className="description">
+        <ButtonBack />
+        <h1>Detalhes dos filmes de Star Wars:</h1>
+      </div>
+
       {hasFilm.map((film, index) => (
         <DetailsFilm film={film} key={index} />
       ))}
+
+      <LoadingSpinner loading={loading} />
     </>
   )
 }
