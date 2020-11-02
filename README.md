@@ -1,72 +1,69 @@
-<img src="https://drive.google.com/file/d/1Di8qF-ZYq5nyzTaWkAAACkXQq3-TViij/view?usp=sharing" alt="Banner com uma logo do Star Wars"/>
 
-# Getting Started with Create React App
+## STAR WARS - DESAFIO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-[Visão Geral do Projeto](#visão-geral-do-projeto)
+  -[Tecnologias](#tecnologias)
+  -[Documentação da API Star Wars](#documentação-api-star-wars)
+-[Informações Extras](#informações-extras)
+-[Requisitos para execução](#requisitos-para-execução)
+  -[Clonando o Repositório](#clonando-o-repositório)
+  -[Executando](#executando)
+-[Gerando build](#gerando-build)
+-[Informações finais](#informacoes-finais)
 
-## Available Scripts
+Projeto disponível em [STARWARS](http://nettlify.com)
 
-In the project directory, you can run:
+### Visão Geral do Projeto
+O objetivo deste desafio foi criar uma aplicação web para fãs de Star Wars, sendo possivel buscar informações nas categorias existentes (planetas, naves espaciais, veículos, pessoas, films e espécies) de todos os sete filmes.
 
-### `yarn start`
+### Tecnologias
+- HTML5
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-CSS
+-[SASS/SCSS](https://sass-lang.com/)
+-[SpinkKit](https://www.npmjs.com/package/react-spinkit)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- JAVASCRIPT 
+-[React]
+-[ReactIcons](https://react-icons.github.io/react-icons/)
+-[Commitlint](https://github.com/conventional-changelog/commitlint)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Documentação da API Star Wars
+A documentação da API utilizada para obter os dados do projeto está disponível em: [SWAPI](https://swapi.co/).
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Informações Extras
+Para visualizar um prototipo de baixa fidelidade e alta foi disponibilizado no link [FIGMA](https://www.figma.com/file/nrO7g1DDI5tonaczfSaA7J/STAR-WARS?node-id=0%3A1)
+Também foi feito deployer da aplicação no link [NETLIFY](https://www.netlify.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Requisitos para execução
 
-### `yarn eject`
+Para realizar as próximas ações de execução do projeto, será necessário que tenha instalado em seu computador o **git** e o **node.js**. Segue os sites para realizar o download e efetuar a instalação:
+  -[GIT](https://git-scm.com/)
+  -[NODE](https://nodejs.org/en/) - V12.13.0 >>
+  -[YARN](https://yarnpkg.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Clonando o repositório
+Agora com todos os requisitos instalados você irá clonar o repósitorio para a sua máquina, abra o terminal e digite:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+``` bash
+git clone https://github.com/brunoamil/star-wars.git
+```
+### Instalando dependências
+Para instalar as dependências do projeto basta abrir seu **Prompt de Comando preferido** na pasta do projeto e inserir o seguinte comando:
+```prompt
+yarn install
+```
+### Executando
+Após a instalação de todas as dependências necessárias, se faz necessário inserir o seguinte comando: 
+```prompt
+yarn start
+```
+### Gerando build
+Para você gerar o build do projeto é necessário inseguir o comando:
+```prompt
+yarn build
+```
+A pasta construida ficará na raiz do projeto como `build`.
