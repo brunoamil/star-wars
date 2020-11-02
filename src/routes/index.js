@@ -5,6 +5,9 @@ import Template from '../components/Template';
 
 import Home from './../pages/Home';
 import Dashboard from './../pages/Dashboard';
+import About from './../pages/About';
+import Swapi from './../pages/Swapi';
+
 import ListFilms from '../components/ListFilms'
 import ListPeople from '../components/ListPeople';
 import ListPlanets from '../components/ListPlanets';
@@ -17,6 +20,8 @@ const Routes = () => (
     <Template>
       <Route path="/" exact component={Home} />
       <Route path="/dashboard" component={Dashboard} />
+      <Route path="/about" component={About} />
+      <Route path="/swapi" component={Swapi} />
       <Route path="/films" component={ListFilms} />
       <Route path="/people" component={ListPeople} />
       <Route path="/planets" component={ListPlanets} />

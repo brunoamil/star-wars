@@ -1,0 +1,29 @@
+@import './../../styles/variables.scss';
+
+.about {
+  text-align: center;
+  color: $whiteClean;
+  line-height: 30px;
+  padding: 40px;
+  a {
+    color: $yellowSecundary;
+    text-decoration: none;
+  }
+  .about__title {
+    font-size: $xlarge;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-shadow: $textShadow;
+  }
+  .about__paragragh {
+    font-size: $large;
+    text-shadow: $textShadow;
+    margin: 30px 0;
+    span {
+      border-bottom: 3px solid $yellowSecundary;
+    }
+  }
+}
+
+
+

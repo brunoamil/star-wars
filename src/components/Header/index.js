@@ -15,8 +15,8 @@ const Navbar = () => {
       </div>
       <nav>
         <ul className="header__navigation">
-          <li><Link to="/sobre">Sobre</Link></li>
-          <li><Link to="/game">Swapi</Link></li>
+          <li><Link to="/about">Sobre</Link></li>
+          <li><Link to="/swapi">Swapi</Link></li>
         </ul>
       </nav>
     </header>
