@@ -35,7 +35,7 @@ A documentação da API utilizada para obter os dados do projeto está disponív
 
 ### Requisitos para execução
 
-Para realizar as próximas ações de execução do projeto, é necessário que tenha instalado em seu computador o **git** e o **node.js**. Segue os sites para realizar o download e efetuar a instalação:
+Para realizar os proximos passos na execução do projeto, é necessário que tenha instalado em seu computador o **git** e o **node.js**. Segue os sites para realizar o download e efetuar a instalação:
   - [GIT](https://git-scm.com/)
   - [NODE](https://nodejs.org/en/) - V12.13.0 >>
   - [YARN](https://yarnpkg.com/)
