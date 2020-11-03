@@ -37,7 +37,7 @@ const ListStarships = () => {
   return (
     <>
       <div className="description">
-        <ButtonBack to="/" />
+        <ButtonBack to="/dashboard" />
         <h1>Detalhes dos filmes de <span>Star Wars:</span></h1>
       </div>
 
