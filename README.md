@@ -26,7 +26,6 @@ O objetivo deste desafio foi criar uma aplicação web para fãs de Star Wars, s
 - JAVASCRIPT 
  - React
  - [ReactIcons](https://react-icons.github.io/react-icons/)
- - [Commitlint](https://github.com/conventional-changelog/commitlint)
 
 
 ### Documentação da API Star Wars
