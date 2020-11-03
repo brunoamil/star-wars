@@ -17,7 +17,7 @@ Foi disponibilizado um prototipo do projeto no [FIGMA](https://www.figma.com/fil
 O objetivo deste desafio foi criar uma aplicação web para fãs de Star Wars, sendo possivel buscar e visualizar informações sobre cada categoria (planetas, naves espaciais, veículos, pessoas, films e espécies) de todos os sete filmes. 
 
 ### Tecnologias
-- HTML5
+- HTML
 
 - CSS
  - [SASS/SCSS](https://sass-lang.com/)
