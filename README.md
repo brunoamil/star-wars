@@ -1,7 +1,7 @@
 
 ## STAR WARS - DESAFIO
 
-Disponível o prototipo feito no [FIGMA](https://www.figma.com/file/nrO7g1DDI5tonaczfSaA7J/STAR-WARS?node-id=61%3A79)
+Foi disponibilizado um prototipo do projeto no [FIGMA](https://www.figma.com/file/nrO7g1DDI5tonaczfSaA7J/STAR-WARS?node-id=61%3A79)
 
 - [Visão Geral do Projeto](#visão-geral-do-projeto)
   - [Tecnologias](#tecnologias)
@@ -37,7 +37,7 @@ A documentação da API utilizada para obter os dados do projeto está disponív
 
 Para realizar os proximos passos na execução do projeto, é necessário que tenha instalado em seu computador o **git** e o **node.js**. Segue os sites para realizar o download e efetuar a instalação:
   - [GIT](https://git-scm.com/)
-  - [NODE](https://nodejs.org/en/) - V12.13.0 >>
+  - [NODE](https://nodejs.org/en/) - v12.13.0 >>
   - [YARN](https://yarnpkg.com/)
 
 ### Clonando o repositório
