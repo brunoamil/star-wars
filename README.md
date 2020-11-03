@@ -55,6 +55,8 @@ Após a instalação de todas as dependências necessárias, insira o seguinte c
 ```prompt
 yarn start
 ```
+O projeto irá abrir no seu navegador em http://localhost:3000/
+
 ### Gerando build
 Para você gerar o build do projeto insira o comando:
 ```prompt
